@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 06</title>
+</head>
+<body>
+    <h1>Tags em HTML5</h1> 
+    <p>Em <abbr title="Hyper Text Markup Language 5">HTML5</abbr>, nós podemos inserir os itens da lista a seguir. Passe o mouse sobre os termos para descobrir qual tag deverá utilizar em cada caso.</p> 
+    <ul type = "square">
+        <li><abbr title="Use a tag <p>">Parágrafos</abbr>
+        <li><abbr title="Use as tags de <h1> até <h6>">Títulos</abbr>
+        <li><abbr title="Use a tag <img>">Imagens</abbr>
+        <li><abbr title="Use a tag <code>">Codigos-fonte</abbr>
+        <li><abbr title="Use a tag <abbr>">Abreviações</abbr>
+        <li><abbr title="Use a tag <ol>">Lista numeradas</abbr>
+        <li><abbr title="Use a tag <ul>">Lista com demarcação</abbr>
+    </ul> 
+    Qual a tag responsável pelos paragráfos?
+    <br><input type="text" name="" id="inpt"><input type="button" value="OK" onclick="OK()"> 
+    <div id="res"></div>
+</body> 
+<script> 
+// você pode repetir o mesmo código para as demais perguntas, mas antes tem que adicionar um input e uma div para cada uma.
+    var resp = document.querySelector("input#inpt") 
+    var res = document.querySelector("div#res")
+    function OK(){
+        if(resp.value === "<p>"){
+            res.innerHTML += "Correto" 
+        } else {
+            res.innerHTML += "Incorreto"
+        } 
+        resp.value = ''
+        resp.focus() 
+    }
+</script>
+</html>
